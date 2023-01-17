@@ -1,0 +1,329 @@
+/****  global css start  ******/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrap-img{
+    width:50px;
+    height: 50px;
+    position: relative;
+
+}
+.wrap-img img{
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.active::after{
+    content: "";
+    width:12px;
+    height: 12px;
+    background: rgb(0, 187, 0);
+    border-radius: 50%;
+    position: absolute;
+    bottom:3%;
+    right:8%
+}
+.unactive::after{
+    content: attr(data-outline);
+    width:20px;
+    height: 12px;
+    background: rgba(0, 187, 0, 0.8);
+    border-radius: 50px;
+    position: absolute;
+    bottom:3%;
+    right:8%;
+    font-size: 8px;
+    text-align: center;
+    color:#fff;
+    font-weight: bold;
+}
+.all-friends h3{
+    font-weight: 550;
+    font-size: 15px
+}
+
+/****  global css end  ******/
+
+
+/****  side menu css start  ******/
+.main{
+    display: flex;
+}
+.side-menu{
+    min-width:310px;
+    /* padding:10px; */
+    background: #222222;
+    color:#fff;
+    height: 100vh;
+    overflow: scroll;
+
+}
+.logo{
+    margin-bottom: 16px;
+}
+.logo i{
+    font-size: 18px;
+    margin-left: 8px;
+    margin-top: 10px;
+}
+.my-account{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px
+
+}
+.my-account span{
+    display: block;
+    margin:0 auto
+}
+.my-account{
+    margin-bottom: 15px;
+}
+.my-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+.messenger{
+    font-weight: bold;
+    font-size: 18px;
+}
+.edit{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgb(71, 71, 71);
+    position: relative;
+}
+.edit i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.search-friends{
+    width: 93%;
+    background: rgb(71, 71, 71);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:8px;
+    border-radius: 2px;
+    margin:auto auto
+
+}
+.search-friends input{
+    width: 100%;
+    background: none;
+    border:none;
+    outline:none;
+    color:#fff;
+}
+.search-friends i{
+    opacity: .3;
+}
+.active-friends{
+    display: flex;
+    margin:15px 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 7px
+}
+.active-friends .friend{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.room-icon{
+    width: 50px;
+    height: 50px;
+    background: #000;
+    border-radius: 50%;
+    position: relative;
+
+}
+.room-icon i{
+    font-size: 20px;
+    color:#fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.room-icon i::after{
+    content: "+";
+    font-size: 18px;
+    font-weight: bold;
+    color:#000;
+    position: absolute;
+    top:40%;
+    left:35%;
+    transform: translate(-50%, -50%);
+}
+.active-friends p{
+    font-size: 10px;
+    width:70px;
+    text-align: center;
+}
+.ferdousi{
+    background: rgb(51, 51, 51);
+}
+.unactive-friend{
+    display: flex;
+    align-items: center;
+    padding:7px
+}
+.all-friends{
+    margin-top: 20px;
+}
+.unactive-friend p{
+   font-size: 13px;
+   margin-top: 5px;
+   color:rgb(126, 124, 124)
+}
+.unactive-friend .wrap-img{
+    margin-right: 15px;
+}
+.my-img{
+    width:35px;
+    height: 35px;
+}
+/****  side menu css end  ******/
+
+
+
+
+/****  chating area css start  ******/
+
+.chating-area{
+    background: #000;
+    width:100%;
+    height: 100vh;
+    color:#fff;
+    padding:15px;
+    position: relative;
+}
+.chat-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.id{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.id-img{
+    width:40px;
+    height: 40px;
+    margin-right: 13px;
+    position: relative;
+}
+.id-img::after{
+    content: "";
+    width:10px;
+    height: 10px;
+    background: rgb(0, 187, 0);
+    border-radius: 50%;
+    position: absolute;
+    bottom:3%;
+    right:8%
+}
+.id-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+.id-name h3{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.heading-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    margin-right: 30px;
+}
+.icon i{
+    font-size: 16px;
+}
+.options span{
+    width:3px;
+    height:3px;
+    background: #fff;
+    display: block;
+    margin-bottom: 3px;
+    border-radius: 50%;
+}
+.me{
+    max-width: 80%;
+    float: right;
+    padding:8px 12px;
+    background: rgb(19, 82, 255);
+    border-radius: 50px;
+    display: table;
+    clear: both;
+    margin:5px
+}
+.u{
+    max-width: 80%;
+    float: left;
+    padding:8px 12px;
+    background: rgb(48, 48, 48);
+    border-radius: 50px;
+    display: table;
+    clear: both;
+}
+.chat-input{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding:15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chat-input i:first-child{
+    margin-right: 10px;
+}
+.fa-heart{
+    font-size: 25px;
+    color:rgb(255, 255, 255);
+    margin-left: 10px;
+}
+.bottom-input i{
+    opacity: 1;
+    margin-left: 10px;
+}
+.bottom-input{
+    background: rgb(47, 48, 47);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+    border-radius: 50px;
+}
+.message-input{
+    width: 100%;
+    background: none;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-size: 15px;
+}
+/****  chating area css end  ******/
